@@ -1,0 +1,18 @@
+[[tasks]]
+type = "Fight"
+
+[tasks.params]
+report_to_penguin = true
+penguin_id = "084310065"
+
+[tasks.params.stage]
+default = "1-7"
+description = "the stage to fight"
+
+[tasks.params.medicine]
+default = 0
+description = "the amount of medicines to use"
+
+[tasks.params.stone]
+default = 0
+description = "the amount of stones to use"

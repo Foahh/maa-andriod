@@ -1,0 +1,75 @@
+#----------------------------- StartUp ----------------------------#
+[[tasks]]
+type = "StartUp"
+params = { client_type = "Official", start_game_enabled = true }
+
+#----------------------------- Recruit ----------------------------#
+[[tasks]]
+name = "公开招募"
+type = "Recruit"
+
+[tasks.params]
+refresh = true
+select = [4, 5]
+confirm = [3, 4, 5]
+skip_robot = false
+recruitment_time = { '3' = 460 }
+times = 100
+expedite = true
+
+#----------------------------- Infrast ----------------------------#
+[[tasks]]
+name = "基建换班"
+type = "Infrast"
+
+[tasks.params]
+mode = 0
+facility = ["Trade", "Reception", "Mfg", "Control", "Office", "Dorm"]
+dorm_trust_enabled = true
+drones = "Money"
+
+[[tasks]]
+name = "领取信用及商店购物"
+type = "Mall"
+
+[tasks.params]
+shopping = true
+buy_first = ["招聘许可", "龙门币"]
+blacklist = ["碳", "家具", "加急许可"]
+force_shopping_if_credit_full = true
+
+#----------------------------- Fight ----------------------------#
+[[tasks]]
+type = "Fight"
+
+[tasks.params]
+report_to_penguin = true
+penguin_id = "084310065"
+
+[tasks.params.stage]
+default = "1-7"
+description = "the stage to fight"
+
+[tasks.params.medicine]
+default = 0
+description = "the amount of medicines to use"
+
+[tasks.params.stone]
+default = 0
+description = "the amount of stones to use"
+
+#----------------------------- Award ----------------------------#
+[[tasks]]
+name = "领取奖励"
+type = "Award"
+
+[tasks.params]
+award = true
+mail = true
+recruit = true
+orundum = true
+mining = true
+
+#--------------------------- CloseDown ---------------------------#
+[[tasks]]
+type = "CloseDown"

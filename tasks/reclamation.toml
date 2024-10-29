@@ -1,0 +1,6 @@
+[[tasks]]
+name = "生息演算"
+type = "ReclamationAlgorithm"
+
+[tasks.params]
+enable = true

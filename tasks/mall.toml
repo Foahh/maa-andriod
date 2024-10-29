@@ -1,0 +1,9 @@
+[[tasks]]
+name = "领取信用及商店购物"
+type = "Mall"
+
+[tasks.params]
+shopping = true
+buy_first = ["招聘许可", "龙门币"]
+blacklist = ["碳", "家具", "加急许可"]
+force_shopping_if_credit_full = true

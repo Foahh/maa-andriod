@@ -1,0 +1,9 @@
+[[tasks]]
+name = "基建换班"
+type = "Infrast"
+
+[tasks.params]
+mode = 0
+facility = ["Trade", "Reception", "Mfg", "Control", "Power", "Office", "Dorm"]
+dorm_trust_enabled = true
+drones = "Money"

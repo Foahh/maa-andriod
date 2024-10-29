@@ -1,0 +1,13 @@
+[[tasks]]
+name = "公开招募"
+type = "Recruit"
+
+[tasks.params]
+refresh = true
+select = [4, 5]
+confirm = [3, 4, 5]
+skip_robot = false
+recruitment_time = { '3' = 460 }
+times = 100
+expedite = true
+
