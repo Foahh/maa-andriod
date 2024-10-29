@@ -56,6 +56,11 @@ set_screen_params() {
     fi
 }
 
+set_maa_config_env() { 
+    MAA_CONFIG_DIR=$(pwd)
+    export MAA_CONFIG_DIR
+}
+
 run_maa_action() {
     local action=$1
     set_screen_params "pre"
@@ -79,11 +84,11 @@ main() {
 
     check_env_vars
 
+    set_maa_config_env
+
     connect_device
 
     unlock_screen
-
-    export MAA_CONFIG_DIR="."
 
     if [ "$action" == "daily" ]; then
         start_arknights
