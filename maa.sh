@@ -83,6 +83,8 @@ main() {
 
     unlock_screen
 
+    export MAA_CONFIG_DIR="."
+
     if [ "$action" == "daily" ]; then
         start_arknights
     fi
